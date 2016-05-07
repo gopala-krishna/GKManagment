@@ -1,0 +1,5 @@
+C:\Projects\GKOW.DistanceAPI\bin\Release\GKOW.DistanceAPI.dll
+C:\Projects\GKOW.DistanceAPI\bin\Release\GKOW.DistanceAPI.pdb
+C:\Projects\GKOW.DistanceAPI\obj\Release\GKOW.DistanceAPI.csprojResolveAssemblyReference.cache
+C:\Projects\GKOW.DistanceAPI\obj\Release\GKOW.DistanceAPI.dll
+C:\Projects\GKOW.DistanceAPI\obj\Release\GKOW.DistanceAPI.pdb

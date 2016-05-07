@@ -1,0 +1,5 @@
+C:\Projects\GKOW.Entities\bin\Release\GKOW.Entities.dll
+C:\Projects\GKOW.Entities\bin\Release\GKOW.Entities.pdb
+C:\Projects\GKOW.Entities\obj\Release\GKOW.Entities.csprojResolveAssemblyReference.cache
+C:\Projects\GKOW.Entities\obj\Release\GKOW.Entities.dll
+C:\Projects\GKOW.Entities\obj\Release\GKOW.Entities.pdb

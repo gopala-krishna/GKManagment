@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders</title>
+    <meta charset="utf-8">
+    <link href="../content/shared/styles/examples-offline.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.common.min.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.rtl.min.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.default.min.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.dataviz.min.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.dataviz.default.min.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jszip.min.js"></script>
+    <script src="../js/kendo.all.min.js"></script>
+    <script src="../content/shared/js/console.js"></script>
+</head>
+<body>
+    <div id="example">
+        <div id="grid"></div>
+
+
+        <script>
+            orders =[
+  {
+      "OrderId": 4011603,
+      "Status": "F",
+      "sku": null,
+      "shipdate": null,
+      "MerchantId": "b75a00e4-9474-4ffb-958a-f02fcbc51abe",
+      "UserId": "2111c32a-c2ed-42e1-89f9-cd3e748732f1",
+      "TotalAmount": 13049,
+      "AmountPayable": 13049,
+      "OrderDate": "/Date(1461248423000+0530)/",
+      "BillFirstname": "soma",
+      "BillLastname": "sekhar",
+      "BillCountry": "India",
+      "BillingState": "Telangana",
+      "BillCity": "Hyderabad",
+      "BillEmail": "som@martjack.com",
+      "BillZIP": "500072",
+      "BillPhone": "91-",
+      "BillMobile": "91-9963424029",
+      "BillAddress1": "test",
+      "ShipFirstname": "soma",
+      "ShipLastname": "sekhar",
+      "ShipCountry": "India",
+      "ShipState": "Telangana",
+      "ShipCity": "Hyderabad",
+      "ShipEmail": "",
+      "ShipZip": "500072",
+      "ShipPhone": "91-",
+      "ShipMobile": "91-9963424029",
+      "ShipAddress1": "test",
+      "ShipOtherCity": "Hyderabad",
+      "DeliveryOption": "ship",
+      "TAXTotal": 0,
+      "VoucherCode": "",
+      "LeadTime": "",
+      "BillAddress2": "test",
+      "ShipAddress2": "test",
+      "IsGift": false,
+      "SupplierID": "00000000-0000-0000-0000-000000000000",
+      "ConversionFactor": "1",
+      "cpuserid": "1c90df93-3d54-4db0-8bed-85d451f0139f",
+      "OrderLineId": null,
+      "PaymentDetails": [
+        {
+            "PointsBurned": "0",
+            "AgentId": "",
+            "GV": "",
+            "Channel": "W",
+            "CurrencyCode": "INR",
+            "PaymentResponse": "mihpayid=403993715514367080&mode=CC&status=success&unmappedstatus=captured&key=gtKFFx&txnid=4011603&amount=13049.00&cardCategory=domestic&discount=0.00&net_amount_debit=13049&addedon=2016-04-21 19:50:26&firstname=soma&lastname=sekhar&address1=soma sekhar test test Hyderabad Telangana India 500072&address2=&city=Hyderabad&state=Telangana&country=India&zipcode=500072&email=som@martjack.com&phone=9963424029&udf1=11146&udf2=4011603&udf3=som@martjack.com&udf4=&udf5=&udf6=&udf7=&udf8=&udf9=&udf10=&hash=b37c6f1ae671eba53503c02ad101149cc5b778df8f93b24767d9f05d7104cd565d887a560d55edb965a8ad9fc9a3b56019243c4ebded995e9b27d20722eb85cb&field1=611265623216&field2=999999&field3=2132452501961121&field4=-1&field5=&field6=&field7=&field8=&field9=SUCCESS&payment_source=payu&PG_TYPE=HDFCPG&bank_ref_num=2132452501961121&bankcode=CC&error=E000&error_Message=No Error&name_on_card=test&cardnum=512345XXXXXX2346&cardhash=This field is no longer supported in postback params.&issuing_bank=HDFC&card_type=MAST",
+            "PaymentStatus": "A",
+            "Amount": "13049",
+            "PaymentDate": "4/21/2016 7:50:24 PM",
+            "PaymentType": "TPG",
+            "OrderId": 4011603,
+            "PaymentDetailsId": 4096591,
+            "checkOutGroup": "",
+            "PaymentOption": "PAYU",
+            "clientIP": "",
+            "ResponseCode": "4011603",
+            "ClientUserAgent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+        }
+      ],
+      "Rewards": null,
+      "ShippingDiscount": 0,
+      "VoucherDiscount": 0,
+      "PromotionDiscount": 0,
+      "GiftMessage": null
+  },
+  {
+      "OrderId": 4004715,
+      "Status": "F",
+      "sku": null,
+      "shipdate": null,
+      "MerchantId": "b75a00e4-9474-4ffb-958a-f02fcbc51abe",
+      "UserId": "a2291d54-58aa-43d2-95f9-1f6f783bf8dd",
+      "TotalAmount": 9089,
+      "AmountPayable": 9089,
+      "OrderDate": "/Date(1461063614000+0530)/",
+      "BillFirstname": "gaurav",
+      "BillLastname": "mahajan",
+      "BillCountry": "India",
+      "BillingState": "Telangana",
+      "BillCity": "Hyderabad",
+      "BillEmail": "gaurav.vasudev2013@vit.ac.in",
+      "BillZIP": "500033",
+      "BillPhone": "91-",
+      "BillMobile": "91-9422996500",
+      "BillAddress1": "hyd",
+      "ShipFirstname": "gaurav",
+      "ShipLastname": "mahajan",
+      "ShipCountry": "India",
+      "ShipState": "Telangana",
+      "ShipCity": "Hyderabad",
+      "ShipEmail": "",
+      "ShipZip": "500033",
+      "ShipPhone": "91-",
+      "ShipMobile": "91-9422996500",
+      "ShipAddress1": "hyd",
+      "ShipOtherCity": "Hyderabad",
+      "DeliveryOption": "ship",
+      "TAXTotal": 0,
+      "VoucherCode": "",
+      "LeadTime": "",
+      "BillAddress2": "",
+      "ShipAddress2": "",
+      "IsGift": false,
+      "SupplierID": "00000000-0000-0000-0000-000000000000",
+      "ConversionFactor": "1",
+      "cpuserid": "00000000-0000-0000-0000-000000000000",
+      "OrderLineId": null,
+      "PaymentDetails": [
+        {
+            "PointsBurned": "450",
+            "AgentId": "",
+            "GV": "",
+            "Channel": "W",
+            "CurrencyCode": "INR",
+            "PaymentResponse": "",
+            "PaymentStatus": "F",
+            "Amount": "450",
+            "PaymentDate": "4/19/2016 4:30:02 PM",
+            "PaymentType": "TPG",
+            "OrderId": 4004715,
+            "PaymentDetailsId": 4089475,
+            "checkOutGroup": "",
+            "PaymentOption": "Capillary",
+            "clientIP": "",
+            "ResponseCode": "",
+            "ClientUserAgent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+        },
+        {
+            "PointsBurned": "0",
+            "AgentId": "",
+            "GV": "",
+            "Channel": "W",
+            "CurrencyCode": "INR",
+            "PaymentResponse": "",
+            "PaymentStatus": "F",
+            "Amount": "8639",
+            "PaymentDate": "4/19/2016 4:30:15 PM",
+            "PaymentType": "TPG",
+            "OrderId": 4004715,
+            "PaymentDetailsId": 4089477,
+            "checkOutGroup": "",
+            "PaymentOption": "PAYU",
+            "clientIP": "",
+            "ResponseCode": "",
+            "ClientUserAgent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+        }
+      ],
+      "Rewards": null,
+      "ShippingDiscount": 0,
+      "VoucherDiscount": 0,
+      "PromotionDiscount": 0,
+      "GiftMessage": null
+  }
+];
+
+
+
+
+                       $(document).ready(function() {
+                           $("#grid").kendoGrid({
+                               dataSource: {
+                                   data: orders,
+                                   schema: {
+                                       model: {
+                                           fields: {
+                                               OrderId: { type: "number"},
+                                               BillCity:{type:"string"}
+                                           }
+                                       }
+                                   },
+                                   pageSize: 20
+                               },
+                               height: 550,
+                               scrollable: true,
+                               sortable: true,
+                               filterable: true,
+                               pageable: {
+                                   input: true,
+                                   numeric: false
+                               },
+                               columns: [
+                               { field: "OrderId", title: "OrderId" },
+                               {field:"BillCity",titile : "Ordered City"}
+                       ]
+                           });
+                       });
+                   </script>
+    </div>
+</body>
+</html>

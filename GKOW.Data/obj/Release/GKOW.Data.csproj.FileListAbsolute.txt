@@ -1,0 +1,4 @@
+C:\Projects\GKOW.Data\bin\Release\GKOW.Data.dll
+C:\Projects\GKOW.Data\bin\Release\GKOW.Data.pdb
+C:\Projects\GKOW.Data\obj\Release\GKOW.Data.dll
+C:\Projects\GKOW.Data\obj\Release\GKOW.Data.pdb

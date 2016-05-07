@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<html>
+    <head runat="server">
+     <link rel ="SHORTCUT ICON" href="/images/MyPhotos/1.jpg" />
+       
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="product" content="Gopala Website"/>
+    <meta name="description" content="Gopala Website"/>
+    <meta name="author" content="Gopala Krishna"/>
+    <meta name="keywords" content="js, css, metro, framework, windows 8, metro ui, IIT Bombay, Microsoft"/>
+
+    <link href="css/metro-bootstrap.css" rel="stylesheet"/>
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="css/iconFont.css" rel="stylesheet"/>
+    <link href="css/docs.css" rel="stylesheet"/>
+
+    <link href="../css/gridstyle/kendo.common.min.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.default.min.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.rtl.min.css" rel="stylesheet">
+    <%--<link href="../css/gridstyle/kendo.default.min.css" rel="stylesheet">--%>
+    <link href="../css/gridstyle/kendo.dataviz.min.css" rel="stylesheet">
+    <link href="../css/gridstyle/kendo.dataviz.default.min.css" rel="stylesheet">
+
+
+ 
+
+
+    <!-- Load JavaScript Libraries -->
+    <script src="<%= ResolveUrl("~/js/jquery/jquery.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/js/jquery/jquery.widget.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/js/jquery/jquery.mousewheel.js")%>"></script>
+
+ 
+
+    <!-- Metro UI CSS JavaScript plugins -->
+    <script src="<%= ResolveUrl("~/js/load-metro.js")%>"></script>
+    
+
+    <!-- Local JavaScript -->
+    <script src="<%= ResolveUrl("~/js/docs.js")%>"></script>
+
+  <!-- Kendo JavaScript -->
+    <script src="<%= ResolveUrl("~/js/jszip.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/js/kendo.all.min.js")%>"></script>
+
+  <title> Welcome to Capillary Products</title>
+</head>
+<body class="metro" style="background-color: black; font-size: 10px" >
+    <form id="form1" runat="server">
+    <div class="navigation-bar dark">
+        <div class="navigation-bar-content container" style="font-size: 10px;">
+        <a href="/" class="element"><span class="icon-grid-view  fg-blue"></span> Capillary Technologies <sup>1.0</sup></a>
+        <span class="element-divider"></span>
+        <ul class="element-menu">
+
+            <%--<li>
+                <a class="dropdown-toggle" href ="#">Test</a>
+                <ul class="dropdown-menu dark" data-role="dropdown" data-show="hover">
+                    <li>
+                        <a href="#" class="dropdown-toggle">Test1</a>
+                        <ul class="dropdown-menu dark" data-role="dropdown" data-show="hover">
+                            <li><a href="../../../UIMyPersonal/AboutMe/MyInterests.aspx">My Interests</a></li>
+                            <li><a href="../../../UIMyPersonal/AboutMe/MyProfession.aspx">My Profession</a></li>
+                            <li><a href="">My Family</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#" class="dropdown-toggle">Test2</a>
+                        <ul class="dropdown-menu dark" data-role="dropdown" data-show="hover">
+                            <li><a href="../../../UIMyPersonal/Photos/MyPhotos.aspx">My Photos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+            <a href ="../../../Search.aspx"><span class ="icon-search bg-dark fg-white" /></a>
+            </li>
+            --%>
+
+              <li>
+                <a class="dropdown-toggle" href ="OrdersFulfillment.aspx">Order Management</a>
+             </li>
+
+            <li>
+                <a class="dropdown-toggle" href ="#">Returns Management</a>
+                <ul class="dropdown-menu dark" data-role="dropdown" data-show="hover">
+                     <li>
+                        <a href="CourierReturns.aspx" class="dropdown-toggle">Courier Returns</a>
+                    </li>
+                     <li>
+                        <a href="CustomerReturns.aspx" class="dropdown-toggle">Customer Returns</a>
+                    </li>
+                </ul>
+            </li>
+
+              <li>
+                <a class="dropdown-toggle" href ="OrderFulfillment.aspx">Inventory Management</a>
+             </li>
+
+              <li>
+                <a class="dropdown-toggle" href ="#">Admin</a>
+                <ul class="dropdown-menu dark" data-role="dropdown" data-show="hover">
+                     <li>
+                        <a href="CourierReturns.aspx" class="dropdown-toggle">Merchant Settings</a>
+                    </li>
+                     <li>
+                        <a href="CustomerReturns.aspx" class="dropdown-toggle">Logistic Settings</a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+            <li>
+            <a href ="../../../Search.aspx"><span class ="icon-search bg-dark fg-white" /></a>
+            </li>
+            
+
+            
+
+
+
+        </ul>
+        
+        </div>
+    </div>
+   
+    
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1"  runat="server">
+
+    </asp:ContentPlaceHolder>
+     
+     <%--<footer class ="" data-load ="Footer.aspx"></footer>--%>
+
+    <div class="bg-black text-shadow">
+            <div class="container" style="padding: 5px;">
+                <div class="grid no-margin">
+                    <div class="row no-margin">
+
+                        <div class="span3 padding0">
+                            <%--<img src="/images/Gopala_iit.jpg" alt="" class="polaroid" />--%>
+                        </div>
+
+                        <%--<div class="span4 padding0">
+
+                            <h3 class="fg-white text-shadow">Follow Me</h3>
+                            <a class="icon-blogger on-right on-left" href ="http://gopalakrishnaiitb.blogspot.in/" style="background: orange;color: white; padding: 10px; border-radius: 50%"></a>
+                            <a class="icon-blogger on-right on-left" href ="http://gopalakrishnatech.blogspot.in/" style="background: red;color: white; padding: 10px; border-radius: 50%"></a>
+                            <a class="icon-facebook on-right on-left" href ="https://www.facebook.com/gopalakrishna.iitb" style="background: blue;color: white; padding: 10px; border-radius: 50%"></a>
+                            <a class="icon-linkedin on-right on-left" href ="https://www.linkedin.com/profile/view?id=97684873&trk=nav_responsive_tab_profile" style="background: magenta;color: white; padding: 10px; border-radius: 50%"></a>
+
+                            <h3 class="fg-white text-shadow">Contact Me</h3>
+                            <a class="icon-phone on-right on-left" href ="tel:918978556611" style="background: orange;color: white; padding: 10px; border-radius: 50%"></a>
+                            <a class="icon-mail on-right on-left" href ="mailto:gopala.krishna@outlook.com" style="background: green;color: white; padding: 10px; border-radius: 50%"></a>
+                            <a class="icon-location on-right on-left" href ="https://www.google.co.in/maps/place/Hyderabad" style="background: yellow;color: white; padding: 10px; border-radius: 50%"></a>
+                            <a class="icon-skype on-right on-left" href ="skype:gopala.krishna_1" style="background: skyblue;color: white; padding: 10px; border-radius: 50%"></a>
+                           
+                             <h3 class="fg-white text-shadow"> Like & Share</h3>
+                             <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgeekgopalakrishna.com%2F&amp;width=200&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
+                        </div>--%>
+
+                        <%--<div class="span6 padding5">
+                                    <h4 class="fg-white text-shadow">Contact me if you need professional advice on</h4>
+                         </div>--%>
+
+                        <%--<div class="span3 padding0">
+                            <a class="button bg-green fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Microsoft.NET</a>
+                            <a class="button bg-yellow fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Windows 8</a>
+                            <a class="button bg-red fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Hacking</a>
+                            <a class="button bg-pink fg-white" style="width: 100%; margin-bottom: 5px" href=" ">BigData</a>
+                            <a class="button bg-orange fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Product Management</a>
+                            <a class="button bg-magenta fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Mobile Device Management</a>
+                            <a class="button bg-blue fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Cross Platform Technologies</a>
+                        </div>--%>
+
+                        <%--<div class="span3 padding0">
+                        <a class="button bg-yellow fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Frameworks Design</a>
+                            <a class="button bg-blue fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Windows Internals</a>
+                            <a class="button bg-pink fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Web Scalability Design</a>
+                            <a class="button bg-magenta fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Website Design</a>
+                            <a class="button bg-orange fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Mathematics</a>
+                            <a class="button bg-red fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Photography</a>
+                            <a class="button bg-green fg-white" style="width: 100%; margin-bottom: 5px" href=" ">Social Psychology</a>>
+                    </div>--%>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container tertiary-text bg-black fg-white text-shadow " style="height: 10px">
+                <footer style ="height:10px">
+                    <div class="bottom-menu-wrapper fg-white" >
+                        <ul class="horizontal-menu compact fg-white">
+                            <li>&copy; 2016 Capillary Technologies</li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li  style ="align-items: center">
+                            <a class="icon-blogger on-right on-left" href ="http://gopalakrishnaiitb.blogspot.in/" style="background: orange;color: white; padding: 6px; border-radius: 50%"></a>
+                            <a class="icon-blogger on-right on-left" href ="http://gopalakrishnatech.blogspot.in/" style="background: red;color: white; padding: 6px; border-radius: 50%"></a>
+                            <a class="icon-facebook on-right on-left" href ="https://www.facebook.com/gopalakrishna.iitb" style="background: blue;color: white; padding: 6px; border-radius: 50%"></a>
+                            <a class="icon-linkedin on-right on-left" href ="https://www.linkedin.com/profile/view?id=97684873&trk=nav_responsive_tab_profile" style="background: magenta;color: white; padding: 6px; border-radius: 50%"></a>
+                            <a class="icon-phone on-right on-left" href ="tel:918978556611" style="background: orange;color: white; padding: 6px; border-radius: 50%"></a>
+                            <a class="icon-mail on-right on-left" href ="mailto:gopala.krishna@outlook.com" style="background: green;color: white; padding: 6px; border-radius: 50%"></a>
+                            <a class="icon-location on-right on-left" href ="https://www.google.co.in/maps/place/Hyderabad" style="background: yellow;color: white; padding: 6px; border-radius: 50%"></a>
+                            <a class="icon-skype on-right on-left" href ="skype:gopala.krishna_1" style="background: skyblue;color: white; padding: 6px; border-radius: 50%"></a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+    </div>
+   
+      <script src="js/hitua.js"></script>
+   </form>
+</body>
+
+<%--Google analytics tracking--%>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58426798-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</html>

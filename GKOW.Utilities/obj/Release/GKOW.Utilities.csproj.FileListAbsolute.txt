@@ -1,0 +1,4 @@
+C:\Projects\GKOW.Utilities\bin\Release\GKOW.Utilities.dll
+C:\Projects\GKOW.Utilities\bin\Release\GKOW.Utilities.pdb
+C:\Projects\GKOW.Utilities\obj\Release\GKOW.Utilities.dll
+C:\Projects\GKOW.Utilities\obj\Release\GKOW.Utilities.pdb

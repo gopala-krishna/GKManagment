@@ -1,0 +1,9 @@
+C:\GKOW\GKOW.MartjackAPI\bin\Release\GKOW.MartjackAPI.dll
+C:\GKOW\GKOW.MartjackAPI\bin\Release\GKOW.MartjackAPI.pdb
+C:\GKOW\GKOW.MartjackAPI\obj\Release\GKOW.MartjackAPI.dll
+C:\GKOW\GKOW.MartjackAPI\obj\Release\GKOW.MartjackAPI.pdb
+C:\GKOW\GKOW.MartjackAPI\obj\Release\GKOW.MartjackAPI.csprojResolveAssemblyReference.cache
+C:\Projects\GKOW.MartjackAPI\bin\Release\GKOW.MartjackAPI.dll
+C:\Projects\GKOW.MartjackAPI\bin\Release\GKOW.MartjackAPI.pdb
+C:\Projects\GKOW.MartjackAPI\obj\Release\GKOW.MartjackAPI.dll
+C:\Projects\GKOW.MartjackAPI\obj\Release\GKOW.MartjackAPI.pdb
